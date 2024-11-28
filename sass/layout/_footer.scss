@@ -4,6 +4,10 @@
     font-size: 1.4rem;
     color:$light-gray;
 
+    @include repond(tab-port){
+        padding: 8rem 0;
+    }
+
     &_logo-box{
         text-align: center;
         margin-bottom: 8rem;
@@ -25,6 +29,11 @@
         border-top:1px solid #777 ;
         padding-top: 2rem;
         display: inline-block;
+
+        @include repond(tab-port){
+           width: 100%;
+           text-align: center;
+        }
     }
 
     &__link{
@@ -52,6 +61,9 @@
         width:80%;
         float:right;
         color:$light-gray;
-
+        @include repond (tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
 }

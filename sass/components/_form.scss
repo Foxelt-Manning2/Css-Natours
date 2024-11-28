@@ -16,6 +16,9 @@
         width: 90%;
         display: block;
         transition: all .3s;
+        @include repond(tab-port){
+          width: 100%;
+        }
 
         &:focus:invalid{
             border-bottom: 3px solid $orange-dark;
@@ -36,6 +39,12 @@
         width: 49%;
         display: inline-block;
 
+        @include repond(tab-port){
+          width: 100%;
+          margin-bottom: 1rem;
+          margin-top: 2rem;
+        }
+
     }
 
   &__radio-label{
@@ -48,7 +57,7 @@
 
   }
   &_radio-input{
-    visibility: hidden;
+   display: none;
   }
   &-radio-button{
     height: 3rem;
